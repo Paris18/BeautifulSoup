@@ -11,7 +11,7 @@ for item in ['java','python','go']: #its for more than on 1 languege output prin
 
 	# printing information from web page
 	soup = BeautifulSoup(open("test2.html"),'html.parser')
-	for ls in soup.find_all("ul", class_='left-menu'):
+	for ls in soup.find_all("ul", class_='left-menu'):# selects items in ul tag and class left menu only
  		# ld=ls.find_all('a')
 		print ls.get_text() #to print text field 
 
