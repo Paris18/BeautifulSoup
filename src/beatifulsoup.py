@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
+
 i = 0
 for item in ['java','python','go']: #its for more than on 1 languege output printing
 	r = requests.get('http://www.tutorialspoint.com/%s/index.htm' %item) #geting resource for specified web page in object 'r'
